@@ -16,4 +16,9 @@ class Event extends Model
         'location',
         'status'
     ];
+
+    public function getImageAttribute($value): string
+    {
+        return 'images/event/' . $value;
+    }
 }

@@ -10,4 +10,9 @@ class Slider extends Model
         'image',
         'status'
     ];
+
+    public function getImageAttribute($value): string
+    {
+        return 'images/slider/' . $value;
+    }
 }

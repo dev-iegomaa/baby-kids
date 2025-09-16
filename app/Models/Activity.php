@@ -12,4 +12,9 @@ class Activity extends Model
         'icon',
         'status'
     ];
+
+    public function getIconAttribute($value): string
+    {
+        return 'images/activity/' . $value;
+    }
 }
