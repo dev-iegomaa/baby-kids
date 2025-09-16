@@ -13,4 +13,9 @@ class Teacher extends Model
         'specialization',
         'status'
     ];
+
+    public function getImageAttribute($value): string
+    {
+        return 'images/teacher/' . $value;
+    }
 }

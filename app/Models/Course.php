@@ -13,4 +13,9 @@ class Course extends Model
         'price',
         'status'
     ];
+
+    public function getImageAttribute($value): string
+    {
+        return 'images/course/' . $value;
+    }
 }
